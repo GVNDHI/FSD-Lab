@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #111;
+}
+
+/* =========================
+   CODE / SERVER BACKDROP
+========================= */
+
+header.code-backdrop {
+    position: relative;
+    padding: 90px 20px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    background: #050505;
+}
+
+/* SERVER GRID */
+header.code-backdrop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(255,204,0,0.08) 1px, transparent 1px),
+        linear-gradient(rgba(255,204,0,0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 0;
+}
+
+/* FLOATING CODE LINES */
+header.code-backdrop::after {
+    content: "<html>  <div>  function()  server.js  API  404  console.log()  </div> </html>";
+    position: absolute;
+    inset: 0;
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    color: rgba(255, 204, 0, 0.12);
+    white-space: pre-wrap;
+    line-height: 2.2rem;
+    padding: 40px;
+    animation: scrollCode 18s linear infinite;
+    z-index: 0;
+}
+
+/* CODE SCROLL */
+@keyframes scrollCode {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50%); }
+}
+
+/* CONTENT ABOVE BACKDROP */
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+/* LOGO */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffcc00;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+/* HEADER TEXT */
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+header p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* NAV BUTTONS */
+.nav-buttons {
+    margin-top: 30px;
+}
+
+/* BUTTONS */
+.contact-btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 30px;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* SECTIONS */
+.about, .projects, .contact {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* TAB FUNCTION */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* HEADINGS */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #000;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #ffcc00;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+/* PROJECT CARDS */
+.project-card {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 6px solid #ffcc00;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+/* CONTACT */
+.contact {
+    background-color: #f9f9f9;
+}
+
+.contact p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}

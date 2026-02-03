@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="code-backdrop">
+        <div class="logo">AA<span>IN</span></div>
+
+        <h1>Aditya Ajith</h1>
+        <p>Web Developer | Designer | Student</p>
+
+        <div class="nav-buttons">
+            <a href="#" class="contact-btn" onclick="showSection('about')">About</a>
+            <a href="#" class="contact-btn" onclick="showSection('projects')">Projects</a>
+            <a href="#" class="contact-btn" onclick="showSection('contact')">Contact</a>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about section active" id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi! I’m a beginner web developer learning HTML and CSS.
+            This is my first portfolio website.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Project One</h3>
+            <p>A simple website built using HTML & CSS.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Project Two</h3>
+            <p>Another cool project coming soon!</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work together or have any questions, feel free to reach out.</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> aditya.ajith@mitwpu.edu.in</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Aditya Ajith</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
