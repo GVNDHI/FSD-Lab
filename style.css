@@ -163,6 +163,24 @@ h2::after {
     transform: translateY(-6px);
 }
 
+.project-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #000;
+    color: #ffcc00;
+}
+
+
 /* CONTACT */
 .contact {
     background-color: #f9f9f9;
