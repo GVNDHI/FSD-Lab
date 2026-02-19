@@ -1,6 +1,6 @@
 body {
     font-family: "Georgia", "Times New Roman", serif;
-    background-color: #FFFFF0; /* Ivory */
+    background-color: #FFFFF0; 
     height: 100vh;
     margin: 0;
     display: flex;
@@ -14,13 +14,13 @@ body {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    border-top: 6px solid #800020; /* Burgundy accent */
+    border-top: 6px solid #800020; 
 }
 
 .site-title {
     text-align: center;
     margin-bottom: 5px;
-    color: #800020; /* Burgundy */
+    color: #800020; 
     font-size: 28px;
     letter-spacing: 1px;
 }
@@ -60,7 +60,7 @@ button {
     width: 100%;
     padding: 12px;
     margin-top: 25px;
-    background-color: #800020; /* Burgundy */
+    background-color: #800020; 
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -72,5 +72,24 @@ button {
 }
 
 button:hover {
-    background-color: #5c0017; /* Darker burgundy */
+    background-color: #5c0017; 
 }
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    background-color: #800020; 
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Georgia", serif;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
